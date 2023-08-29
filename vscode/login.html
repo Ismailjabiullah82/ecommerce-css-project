@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="this is an ecommerce project for making ismail express"
+    />
+    <title>Ecommerce project</title>
+    <!-- <-- font-awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar starts here -->
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+      <ul class="nav-upper flex-space-around">
+        <li class="nav-list">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-list">
+          <a href="register.html" class="nav-link">Register</a>
+        </li>
+        <li class="nav-list">
+          <a href="login.html" class="nav-link">Login</a>
+        </li>
+        <li class="nav-list">
+          <a href="index.html" class="nav-link">Logout</a>
+        </li>
+        <li class="nav-list">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+        <li class="nav-list">
+          <a href="profile.html" class="nav-link"
+            ><img class="profile-icon" src="images/profile.png" alt=""
+          /></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ul.nav-lower>li.nav-list>a.nav-link  -->
+    <ul class="nav-lower flex-space-around">
+      <li class="nav-list">
+        <a href="index.html" class="nav-brand nav-link">Ismail Express</a>
+      </li>
+      <li class="nav-list">
+        <a href="cart.html" class="nav-link">
+          <span><i class="fa-solid fa-cart-shopping"></i></span>
+          cart 2 products - $124.50
+        </a>
+      </li>
+    </ul>
+    <!-- navbar ends here -->
+
+    <main>
+      <section class="login">
+        <h2 class="section-title text-center">User Login</h2>
+        <div class="card">
+          <form action="" class="form">
+            
+          </form>
+          <form action="" class="form">
+            <div class="form-control flex-center">
+              <label for="email">Email</label>
+              <input type="email" id="email" required autocomplete="email" />
+            </div>
+          </form>
+          <form action="" class="form">
+            <div class="form-control flex-center">
+              <label for="Password">Password</label>
+              <input
+                type="password"
+                id="password"
+                required
+                autocomplete="password"
+              />
+            </div>
+
+          
+            <div class="form-control flex-center form-btn-field">
+              <button class="btn contact-btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer starts here -->
+    <footer class="footer flex-space-around">
+      <div class="flex-space-around">
+        <label for="subscribe">Sbuscribe to Newsletter</label>
+        <input
+          type="email"
+          id="subscribe"
+          name="subscribe"
+          class="footer-input"
+          placeholder="Your Email Address"
+        />
+        <button class="btn btn-subscribe">Subscribe</button>
+      </div>
+      <div>
+        <p>&copy;Copyright 2023 Ismail Express. All rights reserve.</p>
+      </div>
+    </footer>
+    <!-- Footer ends here -->
+    <script src="script/index.js"></script>
+  </body>
+</html>
